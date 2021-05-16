@@ -36,7 +36,6 @@ provider "kubernetes" {
   host                   = local.cluster_host
   cluster_ca_certificate = base64decode(module.cluster.cluster_ca)
   token                  = data.google_client_config.default.access_token
-
 }
 
 provider "helm" {
@@ -64,9 +63,9 @@ resource "helm_release" "nginx_ingress" {
 resource "helm_release" "postgres-cluster" {
   name = "postgres-cluster"
 
-  repository = "https://charts.bitnami.com/bitnami"
-  chart      = "postgresql"
-  version    = "10.4.5"
+  repository   = "https://charts.bitnami.com/bitnami"
+  chart        = "postgresql"
+  version      = "10.4.5"
   reuse_values = true
 
   set {

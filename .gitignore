@@ -1,2 +1,3 @@
 infra/service_account.json
 .terraform
+*.backup
