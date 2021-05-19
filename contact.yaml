@@ -1,0 +1,9 @@
+allContacts:
+  email: 'XXX@gmail.com'
+  phoneNumber: '+XXX'
+  postalAddress:
+    regionCode: 'UA'
+    postalCode: '03022'
+    locality: 'Kiev'
+    addressLines: ['XXX']
+    recipients: ['Dmitry Zherebko']
